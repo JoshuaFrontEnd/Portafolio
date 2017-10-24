@@ -27,7 +27,7 @@ gulp.task('sass', () =>
   gulp.src('./dev/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(postcss(postCSSPlugins))
+    // .pipe(postcss(postCSSPlugins))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./public/css'))
     .pipe(server.stream({match: '**/*.css'}))
@@ -35,7 +35,7 @@ gulp.task('sass', () =>
 
 gulp.task('pug', () =>
   gulp.src('./dev/pug/*.pug')
-    .pipe(pug())
+    .pipe(pug({pretty: true}))
     .pipe(gulp.dest('./public'))
 );
 
