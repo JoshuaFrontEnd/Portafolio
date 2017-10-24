@@ -23,7 +23,7 @@ gulp.task('es6', () =>
 );
 
 gulp.task('sass', () =>
-  gulp.src('./dev/scss/styles.scss')
+  gulp.src('./dev/scss/main.scss')
     .pipe(sass())
     .pipe(postcss(postCSSPlugins))
     .pipe(gulp.dest('./public/css'))
