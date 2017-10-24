@@ -5,6 +5,7 @@ import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import cssnano from 'cssnano';
+import sourcemaps from 'gulp-sourcemaps';
 
 const server = browserSync.create();
 
@@ -23,9 +24,11 @@ gulp.task('es6', () =>
 );
 
 gulp.task('sass', () =>
-  gulp.src('./dev/scss/main.scss')
+  gulp.src('./dev/scss/styles.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss(postCSSPlugins))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./public/css'))
     .pipe(server.stream({match: '**/*.css'}))
 );
