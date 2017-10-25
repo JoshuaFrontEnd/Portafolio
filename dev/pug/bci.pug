@@ -1,0 +1,37 @@
+extends templates/header
+block main
+	<!--[if lt IE 10]>
+		p.browserupgrade Estas usando un navegador strong OBSOLETO E INSEGURO. Por favor actualizalo
+			strong
+				a(href='http://browsehappy.com/')  AQUÍ
+			|  para mejorar tu experiencia y seguridad.
+	<![endif]-->
+	header.header
+		section.saludo.saludo-cliente
+			a(href='index.html')
+				p.saludo__hola.bubble
+					span ¡Hola!
+				h1.saludo__nombre Soy
+					span.bold  Joshua Torres
+				h2.saludo__cargo Desarrollador Front End
+	section.main-section
+		p.infoCliente Widgets realizados para la pagina
+			a(href='https://www.bci.cl/cib', target='_blank').infoCliente__link CIB
+			|  de BCI implementada en CMS Modyo, trabajo para agencia
+			a(href='http://love.cl/', target='_blank').infoCliente__link Love
+		section.cont-boxes
+			a(href='http://www.joshua.cl/trabajos/bci-cib/credenciales/', target='_blank')
+				div.box.box-txt Credenciales
+			a(href='http://www.joshua.cl/trabajos/bci-cib/menu/', target='_blank')
+				div.box.box-txt Menu
+			a(href='http://www.joshua.cl/trabajos/bci-cib/modelo-negocios/', target='_blank')
+				div.box.box-txt Modelo de Negocios
+			a(href='http://www.joshua.cl/trabajos/bci-cib/nuestro-equipo/', target='_blank')
+				div.box.box-txt Nuestro Equipo
+			a(href='http://www.joshua.cl/trabajos/bci-cib/opinion-expertos/', target='_blank')
+				div.box.box-txt Opinion de Expertos
+			a(href='http://www.joshua.cl/trabajos/bci-cib/prensa/', target='_blank')
+				div.box.box-txt Prensa
+			a(href='http://www.joshua.cl/trabajos/bci-cib/soluciones/', target='_blank')
+				div.box.box-txt Soluciones
+	include templates/footer.pug
