@@ -1,0 +1,30 @@
+extends templates/header
+block main
+	<!--[if lt IE 10]>
+		p.browserupgrade Estas usando un navegador strong OBSOLETO E INSEGURO. Por favor actualizalo
+			strong
+				a(href='http://browsehappy.com/')  AQUÍ
+			|  para mejorar tu experiencia y seguridad.
+	<![endif]-->
+	header.header
+		section.saludo.saludo-cliente
+			a(href="index.html")
+				p.saludo__hola.bubble
+					span Inicio
+			h1.saludo__nombre
+				span.bold  RedCompra
+			//- h2.saludo__cargo Trabajos
+		//- a(href="index.html").btn__volver.center Inicio
+	section.main-section
+		p.infoCliente Landing de RedCompra para agencia
+			a(href='http://love.cl/', target='_blank').infoCliente__link Love
+		section.cont-boxes
+			a(href='http://www.joshua.cl/trabajos/felizconmiredcompra/inicio', target='_blank')
+				div.box.box-txt Inicio
+			a(href='http://www.joshua.cl/trabajos/felizconmiredcompra/video', target='_blank')
+				div.box.box-txt Video
+			a(href='http://www.joshua.cl/trabajos/felizconmiredcompra/preguntas', target='_blank')
+				div.box.box-txt Preguntas
+			a(href='http://www.joshua.cl/trabajos/felizconmiredcompra/cierre', target='_blank')
+				div.box.box-txt Cierre
+	include templates/footer.pug
