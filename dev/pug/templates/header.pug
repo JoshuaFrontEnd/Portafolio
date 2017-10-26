@@ -23,4 +23,10 @@ html.no-js(lang='es')
 			script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
 		<![endif]-->
 	body.body
+		<!--[if lt IE 10]>
+			p.browserupgrade Estas usando un navegador strong OBSOLETO E INSEGURO. Por favor actualizalo
+				strong
+					a(href='http://browsehappy.com/')  AQUÍ
+				|  para mejorar tu experiencia y seguridad.
+		<![endif]-->
 		block main
