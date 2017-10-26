@@ -81,7 +81,7 @@ p {
 		margin-bottom: 24px;
 		letter-spacing: -1px;
 	}
-	&-cliente{
+	&--cliente{
 		padding-bottom: 50px;
 		padding-bottom: 0;
 	}
@@ -242,7 +242,7 @@ p {
 @media (max-height: 768px) {
 
 	.saludo{
-	    padding: 100px 0 50px;
+	    padding: 100px 0 0;
 	}
 
 }
@@ -256,6 +256,9 @@ p {
 		}
 		&__cargo{
 			font-size: 4.5vw;
+		}
+		&--cliente{
+			padding-bottom: 0;
 		}
 	}
 

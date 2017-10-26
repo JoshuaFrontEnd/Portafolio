@@ -1,0 +1,30 @@
+extends templates/header
+block main
+	<!--[if lt IE 10]>
+		p.browserupgrade Estas usando un navegador strong OBSOLETO E INSEGURO. Por favor actualizalo
+			strong
+				a(href='http://browsehappy.com/')  AQUÍ
+			|  para mejorar tu experiencia y seguridad.
+	<![endif]-->
+	header.header
+		section.saludo.saludo--cliente
+			a(href="index.html")
+				p.saludo__hola.bubble
+					span Inicio
+			h1.saludo__nombre
+				span.bold  Postgrado Mayor
+	section.main-section
+		p.infoCliente Banners hechos con
+			a(href='https://www.google.com/webdesigner/', target='_blank').infoCliente__link Google Web Designer,
+			|  mailings y landings de Campaña para ex candidato presidencial, trabajo para agencia
+			a(href='http://www.divanchile.com/', target='_blank').infoCliente__link Divan
+		section.cont-boxes
+			a(href='http://www.joshua.cl/trabajos/umayor/repo/landing/', target='_blank')
+				div.box.box-txt Landing Nueva
+			a(href='http://www.joshua.cl/trabajos/umayor/repo/mailing-list', target='_blank')
+				div.box.box-txt Mailings
+			a(href='http://www.joshua.cl/trabajos/umayor/repo/banners-list', target='_blank')
+				div.box.box-txt Banners
+			a(href='http://www.joshua.cl/trabajos/umayor/lgenerica/', target='_blank')
+				div.box.box-txt Landings antiguas
+	include templates/footer.pug

@@ -1,0 +1,42 @@
+extends templates/header
+block main
+	<!--[if lt IE 10]>
+		p.browserupgrade Estas usando un navegador strong OBSOLETO E INSEGURO. Por favor actualizalo
+			strong
+				a(href='http://browsehappy.com/')  AQUÍ
+			|  para mejorar tu experiencia y seguridad.
+	<![endif]-->
+	header.header
+		section.saludo.saludo--cliente
+			a(href="index.html")
+				p.saludo__hola.bubble
+					span Inicio
+			h1.saludo__nombre
+				span.bold  Finning Cat
+	section.main-section
+		p.infoCliente Landings promocionales de Finning Cat, trabajo para agencia
+			a(href='http://www.divanchile.com/', target='_blank').infoCliente__link Divan
+		section.cont-boxes
+			a(href='http://www.joshua.cl/trabajos/finning/03.06.15%20Landing%20Horquilla/', target='_blank')
+				div.box.box-txt Horquilla
+			a(href='http://www.joshua.cl/trabajos/finning/08.04.15%20Landing%20Finning%20-%20Refrigerantes/', target='_blank')
+				div.box.box-txt Refrigerantes
+			a(href='http://www.joshua.cl/trabajos/finning/08.06.15%20Landing%20-%20Mailing%20Garantia%20Extendida/', target='_blank')
+				div.box.box-txt Garantia Extendida
+			a(href='http://www.joshua.cl/trabajos/finning/10.04.15%20Landing%20Horquilla/', target='_blank')
+				div.box.box-txt Horquilla V2
+			a(href='http://www.joshua.cl/trabajos/finning/10.06.15%20Landing%20-%20Mailing%20Cargadores/', target='_blank')
+				div.box.box-txt Cargadores
+			a(href='http://www.joshua.cl/trabajos/finning/14.04.15%20Landing%20Oportunicat%20Mantenimiento/', target='_blank')
+				div.box.box-txt Mantenimiento
+			a(href='http://www.joshua.cl/trabajos/finning/16.04.15%20Landing%20Promociones/', target='_blank')
+				div.box.box-txt Promociones
+			a(href='http://www.joshua.cl/trabajos/finning/20.04.15%20Landing%20y%20mailing%20super%20oferta%20olympian/', target='_blank')
+				div.box.box-txt Oferta Olympian
+			a(href='http://www.joshua.cl/trabajos/finning/21.04.15%20Landing%20Curso%20Fit/', target='_blank')
+				div.box.box-txt Curso Fit
+			a(href='http://www.joshua.cl/trabajos/finning/24.04.15%20Landing%20Mailing%20Bateria/', target='_blank')
+				div.box.box-txt Bateria
+			a(href='http://www.joshua.cl/trabajos/finning/31.07.15%20Landing%20Paving/', target='_blank')
+				div.box.box-txt Paving
+	include templates/footer.pug
